@@ -44,7 +44,7 @@ weatherHist.addEventListener("click", function(){
   getWeather =  function(city){
     //fetch API 
     fetch(
-      "http://api.weatherapi.com/v1/forecast.json?key=850a623db80245b3bf1224608221507&q=" + city +"&days=6&aqi=no&alerts=no"
+      "https://api.weatherapi.com/v1/forecast.json?key=850a623db80245b3bf1224608221507&q="+ city +"&days=6&aqi=no&alerts=no"
     )
     .then((response) => response.json())
     .then((data) => this.displayWeather(data))
